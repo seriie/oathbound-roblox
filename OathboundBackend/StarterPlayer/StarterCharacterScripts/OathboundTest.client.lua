@@ -5,30 +5,30 @@ local oathbound = ReplicatedStorage:WaitForChild("Oathbound")
 local request = oathbound:WaitForChild("Request")
 
 local function test(action, ...)
-    local success, result = pcall(function(...)
-        return request:InvokeServer(action, ...)
-    end, ...)
+	local success, result = pcall(function(...)
+		return request:InvokeServer(action, ...)
+	end, ...)
 
-    print("\n=== TEST:", action, "===")
+	print("\n=== TEST:", action, "===")
 
-    if not success then
-        warn("Request gagal:", result)
-    else
-        print(result)
+	if not success then
+		warn("Request failed:", result)
+	else
+		print(result)
 
-        if result.state then
-            print("Gold Veyra:", result.state.GoldVeyra)
-            print("Active:", result.state.Active)
-            print("Storage:", result.state.Storage)
-        end
+		if result.state then
+			print("Gold Veyra:", result.state.GoldVeyra)
+			print("Active:", result.state.Active)
+			print("Storage:", result.state.Storage)
+		end
 
-        if result.error then
-            warn("Backend response:", result.error)
-        end
-    end
+		if result.error then
+			warn("Backend response:", result.error)
+		end
+	end
 
-    -- The server rate-limits requests to one per 0.5s, so pace the calls.
-    task.wait(0.6)
+	-- The server rate-limits requests to one per 0.5s, so pace the calls.
+	task.wait(0.6)
 end
 
 task.wait(3)

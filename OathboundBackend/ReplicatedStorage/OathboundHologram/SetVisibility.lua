@@ -1,0 +1,3 @@
+-- Roblox class: RemoteFunction | name: SetVisibility | parent: ReplicatedStorage.OathboundHologram
+-- This file is a NAME PLACEHOLDER ONLY. Remotes are Instances, not scripts: create a
+-- RemoteFunction named "SetVisibility" under ReplicatedStorage.OathboundHologram in Studio.

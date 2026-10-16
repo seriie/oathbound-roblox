@@ -1,0 +1,3 @@
+-- Roblox class: RemoteEvent | name: UpdatePosition | parent: ReplicatedStorage.OathboundHologram
+-- This file is a NAME PLACEHOLDER ONLY. Remotes are Instances, not scripts: create a
+-- RemoteEvent named "UpdatePosition" under ReplicatedStorage.OathboundHologram in Studio.

@@ -1,0 +1,3 @@
+-- Roblox class: RemoteFunction | name: RequestAction | parent: ReplicatedStorage.OathboundHologram
+-- This file is a NAME PLACEHOLDER ONLY. Remotes are Instances, not scripts: create a
+-- RemoteFunction named "RequestAction" under ReplicatedStorage.OathboundHologram in Studio.

@@ -1,0 +1,3 @@
+-- Roblox class: RemoteEvent | name: VisibilityChanged | parent: ReplicatedStorage.OathboundHologram
+-- This file is a NAME PLACEHOLDER ONLY. Remotes are Instances, not scripts: create a
+-- RemoteEvent named "VisibilityChanged" under ReplicatedStorage.OathboundHologram in Studio.
